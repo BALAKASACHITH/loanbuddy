@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #0D0D0D;
+    color: #EDEDED;
+    user-select: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+#clicklogo{
+    cursor: pointer;
+}
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(255, 215, 0, 0.5), 
+                0 4px 10px rgba(250, 184, 0, 0.4), 
+                0 5px 12px rgba(255, 140, 0, 0.3);
+}
+
+body {
+    margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, gold, orange);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, orange, gold);
+}
+
+#logo{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+#logo h1{
+    background-color: transparent;
+}
+#logo h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #FFD700;
+    background-color: transparent;
+}
+#opt div {
+    user-select: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    color: gold;
+}
+#opt #aboutopt:hover,#homeopt:hover,#signupopt:hover{
+    box-shadow: 0px 0px 15px gold;
+    color: gold;
+    text-shadow: gold;
+}
+#opt #signinopt{
+    pointer-events: none;
+    background-color: gold;
+    color: black;
+    font-size:large;
+}
+#opt{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px gold;
+}
+
+
+@keyframes ani {
+    from{
+        background-size: 150%;
+        opacity: 0;
+    }
+    to{
+        background-size: 100%;
+        opacity: 1;
+    }
+}
+
+#bottum{
+    flex: 1;
+    background-image: url("/images/sign-in.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    position: relative;
+    animation: ani 500ms linear 0ms 1 normal;
+}
+
+
+#one{
+    height: 500px;
+    width: 400px;
+    background-color: #1A1A1A;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px rgba(255, 215, 0, 0.5);
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    color: gold;
+}
+
+#onedet{
+    background-color: #1A1A1A;
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: transparent;
+    height: 250px;
+}
+
+#onebot{
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    height: 100px;
+}
+
+#onedet h3,#ms1{
+    background-color: transparent;
+    color: gold;
+}
+#email::placeholder,#password::placeholder{
+    color: gold;
+    opacity: 0.5;
+}
+#email,#password{
+    height: 60px;
+    width: 340px;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
+    border-color: transparent;
+    background-color: #1A1A1A;
+    color: gold;
+    padding-left: 20px;
+    font-size: 20px;
+}
+#email:focus,#password:focus{
+    border: 2px solid rgba(255, 215, 0, 0.5);
+}
+#email:-webkit-autofill ,#password:-webkit-autofill{
+    background-color: black !important; 
+    color: gold !important;  
+    -webkit-text-fill-color: gold !important; 
+    box-shadow: 0 0 0px 1000px #1A1A1A inset !important;
+    border-color: gold;
+}
+#Sign_In{
+    font-size: 25px;
+    font-weight: bold;
+    height: 60px;
+    width: 340px;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    border: 2px solid rgba(255, 215, 0, 0.5);
+    background-color: gold;
+    border-color: transparent;
+    color: black;
+    cursor: pointer;
+}
+#Sign_In:hover{
+    box-shadow: 0px 0px 20px rgba(255, 215, 0, 0.5);
+    border-color: rgba(255, 215, 0, 0.5);
+    background-color: #1A1A1A;
+    color: gold;
+}

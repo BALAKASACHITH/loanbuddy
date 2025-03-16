@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loanBuddy - Check Form</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="/css/checkform.css">
+</head>
+<body>
+    <navbar id="nav">
+        <div id="logo">
+            <img src="/images/logo.jpg" alt="LOGO" id="clicklogo">
+            <h2>loanBuddy</h2>
+        </div>
+        <div id="opt">
+            <div id="homeopt">Hello <%= username %></div>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </navbar>
+
+    <div id="main">
+
+        <div id="form-container">
+            <h2>Check Your Loan Eligibility</h2>
+            <form id="loanForm">
+                <input type="text" name="no_of_dependents" placeholder="Number of Dependents">
+                <input type="text" name="education_binary" placeholder="Education Qualification">
+                <input type="text" name="self_employed_binary" placeholder="Employment Type">
+                <input type="number" name="income_annum" placeholder="Annual Income">
+                <input type="number" name="loan_amount" placeholder="Loan Amount">
+                <input type="number" name="loan_term" placeholder="Loan Duration (in months)">
+                <input type="number" name="cibil_score" placeholder="CIBIL Score">
+                <input type="number" name="residential_assets_value" placeholder="Residential Asset Value">
+                <input type="number" name="bank_asset_value" placeholder="Bank Asset Value">
+                <button type="submit">Check Eligibility</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/checkform.js"></script>
+</body>
+</html>
+

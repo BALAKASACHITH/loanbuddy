@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loanBuddy-home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <navbar id="nav">
+        <div id="logo">
+            <img src="/images/logo.jpg" alt="LOGO" id="clicklogo">
+            <h2>loanBuddy</h2>
+        </div>
+        <div id="opt">
+            <div id="homeopt">Hello <%=username%></div>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </navbar>
+    <div id="main">
+        <div class="falling-circles"></div>
+        <div class="falling-circles"></div>
+        <div class="falling-circles"></div>
+        <div class="falling-circles"></div>
+        <div class="falling-circles"></div>
+        <h1>" Hello Buddy ,,</h1>
+        <p>
+            LoanBuddy is a smart loan eligibility prediction tool designed to help users determine their chances of getting a loan based on various financial and personal details. It evaluates factors like the number of dependents, educational qualifications, employment type, annual income, loan amount, and loan duration. Your CIBIL score plays a crucial role, as it reflects your creditworthiness and repayment history. The tool also considers residential and bank asset values to provide an accurate eligibility prediction. By entering these details, you get an instant assessment to help make informed financial decisions. Click the button below and check your eligibility now.
+        </p>
+    
+        <button id="tryBtn">Try It Buddy</button>
+    </div>
+    
+    <script>
+        let username="<%=username%>";
+    </script>
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>

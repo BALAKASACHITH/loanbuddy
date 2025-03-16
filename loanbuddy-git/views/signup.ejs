@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loanBuddy-sign-up</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+<body>
+    <navbar id="nav">
+        <div id="logo">
+            <img src="/images/logo.jpg" alt="LOGO" id="clicklogo">
+            <h2>loanBuddy</h2>
+        </div>
+        <div id="opt">
+            <div id="homeopt">Home</div>
+            <div id="aboutopt">About</div>
+            <div id="signinopt">Sign-in</div>
+            <div id="signupopt">Sign-up/Register</div>
+        </div>
+    </navbar>
+    <div id="bottum">
+        <div id="one" style="visibility: vissible;">
+            <div id="onedet">
+                <h3>Enter Email :</h3>
+                <input type="text" id="email" placeholder="username@gmail.com">
+            </div>
+            <div id="onebot">
+                <h3 id="ms1"></h3>
+                <button id="sendotp">Send-OTP</button>
+            </div>
+        </div>
+        
+        <div id="two" style="visibility: hidden;">
+            <div id="twodet">
+                <h3>Enter OTP :</h3>
+                <input type="text" id="otp" placeholder="xxxxxx" maxlength="6">
+            </div>
+            <div id="twobot">
+                <h3 id="ms2"></h3>
+                <button id="verrify">verrify</button>
+            </div>
+        </div>
+
+        <div id="three" style="visibility: hidden;">
+            <div id="threedet">
+                <h3>Enter Password :</h3>
+                <input type="text" id="ep" placeholder="password" minlength="8">
+                <br>
+                <h3>Confirm Password :</h3>
+                <input type="text" id="cp" placeholder="password" minlength="8">
+            </div>
+            <div id="threebot">
+                <h3 id="ms3"></h3>
+                <button id="Sign_Up">Sign-Up</button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/signup.js"></script>
+</body>
+</html>

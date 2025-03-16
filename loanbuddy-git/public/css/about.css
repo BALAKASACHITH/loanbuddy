@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #0D0D0D;
+    color: #EDEDED;
+    user-select: none;
+}
+#clicklogo{
+    cursor: pointer;
+}
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(255, 215, 0, 0.5), 
+                0 4px 10px rgba(250, 184, 0, 0.4), 
+                0 5px 12px rgba(255, 140, 0, 0.3);
+}
+
+body {
+    margin-top: 70px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, gold, orange);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, orange, gold);
+}
+
+#logo{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+#logo h1{
+    background-color: transparent;
+}
+#logo h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #FFD700;
+    background-color: transparent;
+}
+#opt div {
+    user-select: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    cursor: pointer;
+    color: gold;
+}
+#opt #homeopt:hover,#signinopt:hover,#signupopt:hover{
+    box-shadow: 0px 0px 15px gold;
+    color: gold;
+    text-shadow: gold;
+}
+#opt #aboutopt{
+    pointer-events: none;
+    background-color: gold;
+    color: black;
+    font-size:large;
+}
+#opt{
+    display: flex;
+    height: 100%;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+}
+
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px gold;
+}

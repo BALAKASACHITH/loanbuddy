@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: #EDEDED;
+    user-select: none;
+}
+
+#clicklogo{
+    cursor: pointer;
+}
+#nav {
+    height: 60px;
+    width: 100%;
+    background-color: #1A1A1A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px rgba(255, 215, 0, 0.5), 
+                0 4px 10px rgba(250, 184, 0, 0.4), 
+                0 5px 12px rgba(255, 140, 0, 0.3);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1A1A1A;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, gold, orange);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, orange, gold);
+}
+
+#logo{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+}
+#logo img{
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 30px gold;
+}
+#logo h1{
+    background-color: transparent;
+}
+#logo h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    color: #FFD700;
+    background-color: transparent;
+}
+
+#opt{
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #1A1A1A;
+}
+#opt div{
+    background-color: #1A1A1A;
+    color: gold;
+}
+#opt i{
+    background-color: black;
+    color: gold;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#opt i{
+    cursor: pointer;
+}
+
+/* main */
+
+#main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#main p {
+    font-size: 22px; /* Increased font size */
+    color: gold;
+    background-color: transparent;
+    text-align: center;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 100%;
+    position: relative;
+    z-index: 2;
+    line-height: 1.8; /* Increased line spacing */
+}
+
+#main h1{
+    color: gold;
+    font-size: 40px;
+}
+#tryBtn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    background-color: gold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+#tryBtn:hover {
+    background-color: orange;
+}
+
+/* Falling Circles Animation */
+.falling-circles {
+    position: absolute;
+    top: -300px; /* Start from above the viewport */
+    width: 300px;
+    height: 300px;
+    background-color: gold;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: fallAnimation linear infinite;
+}
+
+/* Randomize Positions */
+.falling-circles:nth-child(1) { left: 10%; animation-duration: 8s; }
+.falling-circles:nth-child(2) { left: 30%; animation-duration: 6s; }
+.falling-circles:nth-child(3) { left: 50%; animation-duration: 7s; }
+.falling-circles:nth-child(4) { left: 70%; animation-duration: 9s; }
+.falling-circles:nth-child(5) { left: 90%; animation-duration: 10s; }
+
+/* Falling Animation */
+@keyframes fallAnimation {
+    0% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
